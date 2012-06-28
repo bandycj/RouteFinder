@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3569d911-09a5-445d-8a9a-5d3129bbda8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3569d911-09a5-445d-8a9a-5d3129bbda8e" name="Default" comment="" />
     <ignored path="RouteFinder.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored mask="*.pyc" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
