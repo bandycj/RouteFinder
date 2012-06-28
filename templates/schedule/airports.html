@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}
+    Refresh Airports
+{% endblock %}
+
+{% block header %}
+    <h1>Refresh Airports</h1>
+{% endblock %}
+
+{% block content %}
+    {% if airports is defined %}
+        {{ list(airports) }}
+    {% endif %}
+{% endblock %}
+
+
+{% macro list(airport_list="") -%}
+    <div>
+        {% if airports is defined %}
+            <ul id="searchList" data-role="listview" data-theme="b" data-filter="true"
+                data-filter-placeholder="Search..." data-inset="true">
+                {% for airport in airports %}
+                    <li data-filtertext="{{ airport.iataCode }}">{{ airport.name }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            No Airports.
+        {% endif %}
+    </div>
+{% endmacro %}		

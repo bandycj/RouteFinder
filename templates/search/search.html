@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}
+    {% if origin is defined and destination is defined %}
+        Date
+    {% elif origin is defined and destination is not defined %}
+        Destination
+    {% else %}
+        Origin
+    {% endif %}
+{% endblock %}
+
+{% block header %}
+    {% if origin is defined and destination is defined %}
+        <h1>Date</h1>
+    {% elif origin is defined and destination is not defined %}
+        <h1>Destination</h1>
+    {% else %}
+        <h1>Origin</h1>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% if origin is defined %}
+        <p><label for="origin">Origin: </label><a id="origin" href="/search/" data-role="button">{{ origin }}</a><p>
+    {% endif %}
+{% if destination is defined %}
+    <p><label for="destination">Destination: </label><a id="destination" href="/search/{{ origin }}"
+                                                        data-role="button">{{ destination }}</a><p>
+{% endif %}
+
+{% if origin is not defined %}
+    {{ list("/search/", airport_list) }}
+{% elif destination is not defined %}
+    {{ list("/search/"+origin+"/", airport_list) }}
+{% elif date is not defined %}
+    <form action="/search/{{ origin }}/{{ destination }}/result" method="post">
+        <p><label for="slider-0">Max hops:</label><input type="range" name="hops" id="slider-0" value="2" min="1"
+                                                         max="{{ max_hops }}"/></p>
+
+        <p><label for="date">Date:</label><input id="date" type="text" data-role="datebox"
+                                                 data-options='{"mode":"calbox","afterToday": true, "useInline": true, "hideInput": true}'/>
+        </p>
+        <input type="submit" value="Search"/>
+    </form>
+{% endif %}
+
+{% endblock %}
+
+
+{% macro list(link="", airport_list="") -%}
+    <div>
+        {% if airport_list %}
+            <ul id="searchList" data-role="listview" data-theme="b" data-filter="true"
+                data-filter-placeholder="Enter {{ page_title }}..." data-inset="true">
+                {% for airport in airport_list %}
+                    <li data-filtertext="{{ airport.name }}"><a
+                            href="{{ link + airport.iataCode }}/">{{ airport.name }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            No Airports.
+        {% endif %}
+    </div>
+{% endmacro %}		
