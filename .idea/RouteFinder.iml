@@ -13,6 +13,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="route_finder_gae" />
   </component>
   <component name="TemplatesService">
     <option name="templateLanguage" value="Jinja2" />

@@ -1,5 +1,4 @@
-from django.db import models
-
+from django.db import models, connection
 
 class Airport(models.Model):
     iataCode = models.TextField(max_length=3, primary_key=True, db_index=True)
@@ -15,8 +14,8 @@ class Flight(models.Model):
     flightNum = models.IntegerField()
     fromDate = models.DateTimeField(auto_now=False)
     toDate = models.DateTimeField(auto_now=False)
-    ska = models.DateTimeField(auto_now=False)
-    skd = models.DateTimeField(auto_now=False)
+    ska = models.TimeField(auto_now=False)
+    skd = models.TimeField(auto_now=False)
 
     def __unicode__(self):
         return self.origin.iataCode + self.destination.iataCode + str(self.flightNum) + str(fromDate) + str(toDate)

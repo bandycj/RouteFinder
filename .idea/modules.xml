@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/RouteFinder.iml" filepath="$PROJECT_DIR$/.idea/RouteFinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../route_finder_gae/.idea/route_finder_gae.iml" filepath="$PROJECT_DIR$/../route_finder_gae/.idea/route_finder_gae.iml" />
     </modules>
   </component>
 </project>

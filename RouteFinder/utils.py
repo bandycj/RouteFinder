@@ -4,6 +4,7 @@ from django.conf import settings
 
 template_dirs = getattr(settings, 'TEMPLATE_DIRS')
 default_mimetype = getattr(settings, 'DEFAULT_CONTENT_TYPE')
+debug = getattr(settings, 'DEBUG')
 env = Environment(loader=FileSystemLoader(template_dirs))
 
 
@@ -18,6 +19,10 @@ def log_traceback(exception, args):
 
 
 def render_to_response(filename, context={}, mimetype=default_mimetype):
+    print debug
+    if debug == "True":
+        context['debug'] = "true"
+
     template = env.get_template(filename)
     rendered = template.render(**context)
     return HttpResponse(rendered, mimetype=mimetype)

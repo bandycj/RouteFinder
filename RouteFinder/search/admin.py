@@ -1,4 +1,4 @@
-from models import Airport, Flight
+from RouteFinder.search.models import Airport, Flight
 from django.contrib import admin
 
 

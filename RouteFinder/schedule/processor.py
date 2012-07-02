@@ -1,8 +1,11 @@
 import  re, os
+import platform
 import urllib2, urllib
 import subprocess
+import tempfile
 from lxml.html import parse
 from lxml.cssselect import CSSSelector
+from django.conf import settings
 
 DOWNLOAD_LINKS = CSSSelector('td.swa_feature_flightSchedules_download_table_data_downloadLink a')
 SCHEDULE_URL = "http://www.southwest.com/flight/view-schedule.html?"
@@ -22,14 +25,14 @@ CURRENT_CITY_RE = re.compile(r'\s+(?!(?:To|From)$).*\(([A-Z]{3})\)')
 #http://www.southwest.com/assets/pdfs/schedules/20120701_20120619_1500/bwi.pdf
 PDF_LINK_RE = re.compile(r'\/(\d{8}_\d{8}_\d{4})\/([a-z]{3}.pdf)')
 
-def getSchedule(iataCode, date):
+def getSchedule(iataCode):
     params = {
         'downloadOriginAirport': iataCode,
-        'dateFrom': date,
-        'dateTo': date,
+        'dateFrom': "",
+        'dateTo': "",
         }
-    urlEncodedParams = urllib.urlencode(params);
-    url = SCHEDULE_URL + urlEncodedParams;
+    urlEncodedParams = urllib.urlencode(params)
+    url = SCHEDULE_URL + urlEncodedParams
     print url
     page = parse(url).getroot()
     page.make_links_absolute()
@@ -39,7 +42,10 @@ def getSchedule(iataCode, date):
         link = a.attrib['href']
         matched = PDF_LINK_RE.search(link)
         if matched is not None:
-            fileName = "/tmp/" + matched.group(1) + matched.group(2)
+            fileName =  tempfile.gettempdir() + "/" + matched.group(1) + matched.group(2)
+            fileName.replace(r'C:\\', "/cygdrive/c/")
+
+            print fileName
             if os.path.isfile(fileName) is False:
                 pdfData = urllib2.urlopen(link).read()
                 pdfFile = open(fileName, "wb")
@@ -126,11 +132,12 @@ def sort(lines=[]):
 
 def readPdf(fileName=None):
     lines = []
-
-    pdfData = ""
     if fileName is not None:
-        app = "/usr/bin/pdftotext"
+        appLoc = "/usr/bin"
+        if platform.system() == "Windows":
+            appLoc = "C:\\cygwin\\bin\\"
 
+        app = appLoc + "pdftotext"
         command = [app, "-layout", fileName, "-"]
         lines.extend(getData(command, CURRENT_CITY_RE))
 
@@ -159,3 +166,19 @@ def getData(command=None, re=None):
             if re.match(line):
                 break
     return lines
+
+def getTimezoneForAirport(iataCode=None):
+    static_files = getattr(settings, 'STATICFILES_DIRS')
+    airportsDat = ""
+    for dir in static_files:
+        if os.path.isfile(dir + "/airports.dat"):
+            airportsDat = dir
+            break
+
+    for line in open(airportsDat):
+        split = line.split(",")
+        currentIata = split[4]
+        offset = split[9]
+        dst = split[10]
+        if currentIata == iataCode:
+            print "%s : %s : %s" % (currentIata, offset,dst)

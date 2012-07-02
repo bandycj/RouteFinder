@@ -9,17 +9,14 @@
 
 {% block content %}
     {% if iataCode is defined %}
-        <p><label for="iataCode">Airport: </label><a id="iataCode" href="/router/schedule/scheduleCities/"
+        <p><label for="iataCode">Airport: </label><a id="iataCode" href="/schedule/scheduleCities/"
                                                      data-role="button">{{ iataCode }}</a><p>
     {% endif %}
 
 {% if iataCode is not defined %}
-    {{ list("/router/schedule/scheduleForm/", airport_list) }}
+    {{ list("/schedule/scheduleForm/", airport_list) }}
 {% else %}
-    <form action="/router/schedule/updateSchedule/{{ iataCode }}/" method="post">
-        <p><label for="date">Date:</label><input id="date" name="date" type="text" data-role="datebox"
-                                                 data-options='{"mode":"calbox","afterToday": true, "useInline": true, "hideInput": true}'/>
-        </p>
+    <form action="/schedule/updateSchedule/{{ iataCode }}/" method="post">
         <input type="submit" value="Update"/>
     </form>
 {% endif %}

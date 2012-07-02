@@ -1,4 +1,4 @@
-from search.models import Airport, Flight
+from RouteFinder.search.models import Airport, Flight
 from RouteFinder.utils import render_to_response
 
 MAX_HOPS = 3
