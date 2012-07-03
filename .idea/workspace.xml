@@ -2,27 +2,208 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3569d911-09a5-445d-8a9a-5d3129bbda8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/airports.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RouteFinder.iml" afterPath="$PROJECT_DIR$/.idea/RouteFinder.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_airports.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_update.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_update_airports.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_update_timezones.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteFinder/templates/search/search_destinations.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteFinder/templates/search/search_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteFinder/templates/search/search_origins.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteFinder/templates/search/search_result.html" />
+      <change type="DELETED" beforePath="E:\PycharmProjects\RouteFinder\templates\schedule\schedule_form.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\PycharmProjects\RouteFinder\templates\schedule\update_result.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\PycharmProjects\RouteFinder\templates\search\result.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\PycharmProjects\RouteFinder\templates\search\search.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFinder/schedule/models.py" afterPath="$PROJECT_DIR$/RouteFinder/schedule/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFinder/schedule/processor.py" afterPath="$PROJECT_DIR$/RouteFinder/schedule/processor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFinder/schedule/views.py" afterPath="$PROJECT_DIR$/RouteFinder/schedule/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFinder/search/views.py" afterPath="$PROJECT_DIR$/RouteFinder/search/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFinder/settings.py" afterPath="$PROJECT_DIR$/RouteFinder/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFinder/urls.py" afterPath="$PROJECT_DIR$/RouteFinder/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFinder/utils.py" afterPath="$PROJECT_DIR$/RouteFinder/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/schedule/schedule_form.html" afterPath="$PROJECT_DIR$/templates/schedule/schedule_form.html" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\schedule\__init__.py" afterPath="$PROJECT_DIR$/RouteFinder/schedule/__init__.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\schedule\models.py" afterPath="$PROJECT_DIR$/RouteFinder/schedule/models.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\schedule\processor.py" afterPath="$PROJECT_DIR$/RouteFinder/schedule/processor.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\schedule\testing.py" afterPath="$PROJECT_DIR$/RouteFinder/schedule/testing.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\schedule\tests.py" afterPath="$PROJECT_DIR$/RouteFinder/schedule/tests.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\schedule\views.py" afterPath="$PROJECT_DIR$/RouteFinder/schedule/views.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\search\__init__.py" afterPath="$PROJECT_DIR$/RouteFinder/search/__init__.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\search\admin.py" afterPath="$PROJECT_DIR$/RouteFinder/search/admin.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\search\models.py" afterPath="$PROJECT_DIR$/RouteFinder/search/models.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\search\tests.py" afterPath="$PROJECT_DIR$/RouteFinder/search/tests.py" />
-      <change type="MOVED" beforePath="F:\PyCharm Projects\RouteFinder\search\views.py" afterPath="$PROJECT_DIR$/RouteFinder/search/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteFinder/views.py" afterPath="$PROJECT_DIR$/RouteFinder/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/accessibility.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/accessibility.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/features.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/features.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/getting-started.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/getting-started.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/intro.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/intro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/platforms.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/about/platforms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/data-attributes.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/data-attributes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/events-nav.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/events-nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/globalconfig.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/globalconfig.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/mediahelpers.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/mediahelpers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/themes.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/api/themes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/api-buttons.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/api-buttons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-grouped.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-grouped.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-icons.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-icons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-inline.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-inline.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-themes.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-themes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-types.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/buttons-types.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/buttons/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/dialogTransition.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/dialogTransition.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/iOSFullscreen.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/iOSFullscreen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/jq17b1.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/jq17b1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/loadingMessage.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/loadingMessage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/loadingMessageTextVisible.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/loadingMessageTextVisible.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/minScrollBack.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/minScrollBack.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/pageLoadErrorMessage.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/pageLoadErrorMessage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/pageTransition.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/pageTransition.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/pushState.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/pushState.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/touchOverflow.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/config/touchOverflow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/api-content.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/api-content.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-set-events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-set-events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-set-methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-set-methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-set-options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-set-options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-set.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible-set.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-collapsible.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-grids.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-grids.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-html.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-html.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-themes.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/content-themes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/content/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/checkboxes/events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/checkboxes/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/checkboxes/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/checkboxes/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/checkboxes/methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/checkboxes/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/checkboxes/options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/checkboxes/options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/docs-forms.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/docs-forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-all-compare.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-all-compare.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-all-mini.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-all-mini.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-all-native.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-all-native.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-all.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-all.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-sample.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-sample.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-themes.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/forms-themes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/plugin-eventsmethods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/plugin-eventsmethods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/radiobuttons/events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/radiobuttons/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/radiobuttons/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/radiobuttons/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/radiobuttons/methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/radiobuttons/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/radiobuttons/options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/radiobuttons/options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/search/events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/search/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/search/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/search/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/search/methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/search/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/search/options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/search/options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/custom.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/custom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/selects/options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/slider/events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/slider/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/slider/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/slider/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/slider/methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/slider/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/slider/options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/slider/options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/switch/events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/switch/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/switch/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/switch/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/switch/methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/switch/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/switch/options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/switch/options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/textinputs/events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/textinputs/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/textinputs/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/textinputs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/textinputs/methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/textinputs/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/textinputs/options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/forms/textinputs/options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/docs-lists.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/docs-lists.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-all-full.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-all-full.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-count.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-count.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-divider.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-divider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-formatting.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-formatting.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-forms-inset.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-forms-inset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-forms.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-icons.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-icons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-inset.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-inset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-nested.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-nested.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-ol.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-ol.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-performance.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-performance.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-readonly-inset.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-readonly-inset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-readonly.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-readonly.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-search-filtertext.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-search-filtertext.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-search-inset.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-search-inset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-search-with-dividers.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-search-with-dividers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-search.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-split-purchase.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-split-purchase.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-split.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-split.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-themes.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-themes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-thumbnails.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-thumbnails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-ul.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/lists/lists-ul.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/nav.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-alt.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-alt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-buttons.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-buttons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-overlay.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-overlay.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-success.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-success.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-with-select.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog-with-select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/docs-links-urltest/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/docs-links-urltest/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/animals.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/animals.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/colors.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/colors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/sample-reuse-page-external.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/sample-reuse-page-external.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/sample-reuse-page.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/sample-reuse-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/vehicles.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/dynamic-samples/vehicles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-anatomy.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-anatomy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-cache.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-cache.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-customtransitions.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-customtransitions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-dialogs.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-dialogs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-dynamic.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-dynamic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-links.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-links.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-navmodel.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-navmodel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-scripting.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-scripting.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-titles.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-titles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-transitions-dialog.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-transitions-dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-transitions-page.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-transitions-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-transitions.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/page-transitions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-a.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-a.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-b.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-b.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-c.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-c.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-d.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-d.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-e.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/pages-themes/theme-e.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/phonegap.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/phonegap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/touchoverflow.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/touchoverflow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/transition-success.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/pages/transition-success.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-events.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-a.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-a.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-b.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-b.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-c.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-c.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-d.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-d.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-e.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-e.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-f.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-f.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-g.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-g.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-h.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms-h.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-methods.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-options.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed-options.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fixed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fullscreen.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-fullscreen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-themes.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/bars-themes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/docs-bars.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/docs-bars.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/docs-footers.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/docs-footers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/docs-headers.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/docs-headers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/docs-navbar.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/docs-navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/footer-persist-a.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/footer-persist-a.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/footer-persist-b.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/footer-persist-b.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/footer-persist-c.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/footer-persist-c.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/footer-persist-d.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/footer-persist-d.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/index.html" afterPath="$PROJECT_DIR$/static/jquery.mobile-1.1.0/demos/docs/toolbars/index.html" />
+      <change type="MOVED" beforePath="E:\PycharmProjects\RouteFinder\static\airports.dat" afterPath="$PROJECT_DIR$/RouteFinder/schedule/airports.dat" />
+      <change type="MOVED" beforePath="E:\PycharmProjects\RouteFinder\templates\base.html" afterPath="$PROJECT_DIR$/RouteFinder/templates/base.html" />
+      <change type="MOVED" beforePath="E:\PycharmProjects\RouteFinder\templates\index.html" afterPath="$PROJECT_DIR$/RouteFinder/templates/index.html" />
+      <change type="MOVED" beforePath="E:\PycharmProjects\RouteFinder\templates\schedule\airports.html" afterPath="$PROJECT_DIR$/RouteFinder/templates/macros.html" />
+      <change type="MOVED" beforePath="E:\PycharmProjects\RouteFinder\templates\schedule\index.html" afterPath="$PROJECT_DIR$/RouteFinder/templates/schedule/index.html" />
     </list>
     <ignored path="RouteFinder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,29 +230,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../route_finder_gae/main.py">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RouteFinder/schedule/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="445" selection-end="540" vertical-scroll-proportion="0.0">
+            <state line="35" column="19" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.55016184">
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="..search_airport" pinned="false" current="false" current-in-tab="false">
+        <entry file="dbDummy://dbElement:/27e7b0f4/b7f19293-3925-4a2f-8583-fb9c6676f739/..search_airport">
+          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RouteFinder/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="82" selection-start="887" selection-end="902" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RouteFinder/search/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../route_finder_gae/app.yaml">
+      <file leaf-file-name="schedule_update_timezones.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_update_timezones.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="19" column="17" selection-start="633" selection-end="633" vertical-scroll-proportion="-12.423077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../route_finder_gae/route_finder_gae/settings.py">
+      <file leaf-file-name="schedule_update.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_update.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="61" selection-start="257" selection-end="257" vertical-scroll-proportion="0.22211055">
-              <folding />
+            <state line="10" column="4" selection-start="164" selection-end="714" vertical-scroll-proportion="-6.5384617">
+              <folding>
+                <marker date="1341262589099" expanded="true" signature="373:654" placeholder="..." />
+                <marker date="1341262589099" expanded="true" signature="474:615" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="processor.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RouteFinder/schedule/processor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="181" column="33" selection-start="5533" selection-end="5533" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#1104#2011#0" expanded="false" />
+                <element signature="e#2038#4164#0" expanded="false" />
+                <element signature="e#4199#4877#0" expanded="false" />
+                <element signature="e#4920#5130#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,30 +319,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/schedule/processor.py" />
-        <option value="$PROJECT_DIR$/schedule/views.py" />
-        <option value="$PROJECT_DIR$/RouteFinder/urls.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/search/search.html" />
-        <option value="$PROJECT_DIR$/templates/schedule/index.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/RouteFinder/utils.py" />
+        <option value="$PROJECT_DIR$/templates/search/search_form.html" />
         <option value="$PROJECT_DIR$/templates/schedule/schedule_form.html" />
+        <option value="$PROJECT_DIR$/templates/schedule/schedule_result.html" />
+        <option value="$PROJECT_DIR$/templates/schedule/schedule_update_timezones.html" />
+        <option value="$PROJECT_DIR$/templates/schedule/schedule_update_airports.html" />
+        <option value="$PROJECT_DIR$/RouteFinder/urls.py" />
+        <option value="$PROJECT_DIR$/RouteFinder/templates/search/search_origins.html" />
+        <option value="$PROJECT_DIR$/RouteFinder/views.py" />
+        <option value="$PROJECT_DIR$/RouteFinder/templates/base.html" />
+        <option value="$PROJECT_DIR$/RouteFinder/utils.py" />
         <option value="$PROJECT_DIR$/RouteFinder/settings.py" />
-        <option value="$PROJECT_DIR$/RouteFinder/search/models.py" />
-        <option value="$PROJECT_DIR$/RouteFinder/schedule/testing.py" />
+        <option value="$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_update_timezones.html" />
+        <option value="$PROJECT_DIR$/RouteFinder/templates/schedule/index.html" />
+        <option value="$PROJECT_DIR$/RouteFinder/schedule/models.py" />
         <option value="$PROJECT_DIR$/RouteFinder/schedule/processor.py" />
         <option value="$PROJECT_DIR$/RouteFinder/schedule/views.py" />
-        <option value="$PROJECT_DIR$/../route_finder_gae/main.py" />
-        <option value="$PROJECT_DIR$/../route_finder_gae/route_finder_gae/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1928" />
-    <option name="height" value="1168" />
+    <option name="width" value="1920" />
+    <option name="height" value="1160" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -160,6 +386,110 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteFinder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -178,11 +508,12 @@
     <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -197,13 +528,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\RouteFinder\templates\schedule" />
       <recent name="F:\PyCharm Projects\RouteFinder\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\RouteFinder" />
+      <recent name="E:\PycharmProjects\RouteFinder\RouteFinder" />
+      <recent name="E:\PycharmProjects\RouteFinder\RouteFinder\schedule" />
       <recent name="F:\PyCharm Projects\RouteFinder\RouteFinder" />
     </key>
   </component>
-  <component name="RunManager" selected="App Engine server.route_finder_gae">
+  <component name="RunManager" selected="Django server.RouteFinder">
     <configuration default="false" name="Default" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console" temporary="true">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
@@ -276,25 +611,6 @@
       <option name="MULTIPROCESS" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <module name="RouteFinder" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -314,6 +630,25 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="RouteFinder" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -434,25 +769,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1168" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1920" height="1160" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67058825" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" sideWeight="0.6679842" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18089648" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18381564" sideWeight="0.6679842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.50053364" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3320158" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -514,87 +849,128 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/schedule/update_result.html">
+    <entry file="file://$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="191" selection-end="191" vertical-scroll-proportion="-6.5384617" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFinder/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/schedule/schedule_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="74" selection-start="584" selection-end="584" vertical-scroll-proportion="-11.769231" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFinder/search/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFinder/search/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.38694993" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFinder/schedule/testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.20637329" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFinder/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="86" selection-end="118" vertical-scroll-proportion="0.051593322" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/airports.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFinder/schedule/processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="60" selection-start="5373" selection-end="5613" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFinder/schedule/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="35" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbElement:/8aa8347/7d34a534-5d7c-4478-9e6f-d68c9ca4f306/..search_airport">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFinder/search/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteFinder/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="10" selection-start="2279" selection-end="2289" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../route_finder_gae/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="445" selection-end="540" vertical-scroll-proportion="0.0">
+        <state line="4" column="24" selection-start="113" selection-end="113" vertical-scroll-proportion="0.07017544">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../route_finder_gae/app.yaml">
+    <entry file="file://$PROJECT_DIR$/RouteFinder/templates/search/search_origins.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="12" column="47" selection-start="238" selection-end="238" vertical-scroll-proportion="0.32850242">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../route_finder_gae/route_finder_gae/settings.py">
+    <entry file="file://$PROJECT_DIR$/RouteFinder/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="61" selection-start="257" selection-end="257" vertical-scroll-proportion="0.22211055">
+        <state line="1" column="36" selection-start="69" selection-end="69" vertical-scroll-proportion="0.026275115">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="24" selection-start="320" selection-end="320" vertical-scroll-proportion="0.19162641">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="792" selection-end="792" vertical-scroll-proportion="0.5517774">
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="5" selection-start="4251" selection-end="4252" vertical-scroll-proportion="0.08037094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_update_airports.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="14" selection-start="158" selection-end="158" vertical-scroll-proportion="0.2190016">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/templates/schedule/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="95" selection-start="449" selection-end="449" vertical-scroll-proportion="0.32850242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_update_timezones.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="17" selection-start="633" selection-end="633" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/templates/schedule/schedule_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="164" selection-end="714" vertical-scroll-proportion="-6.5384617">
+          <folding>
+            <marker date="1341262589099" expanded="true" signature="373:654" placeholder="..." />
+            <marker date="1341262589099" expanded="true" signature="474:615" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/schedule/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/search/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/schedule/processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="33" selection-start="5533" selection-end="5533" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#1104#2011#0" expanded="false" />
+            <element signature="e#2038#4164#0" expanded="false" />
+            <element signature="e#4199#4877#0" expanded="false" />
+            <element signature="e#4920#5130#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="82" selection-start="887" selection-end="902" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbElement:/27e7b0f4/b7f19293-3925-4a2f-8583-fb9c6676f739/..search_airport">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteFinder/schedule/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="19" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.55016184">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

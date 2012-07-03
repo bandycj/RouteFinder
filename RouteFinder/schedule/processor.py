@@ -3,6 +3,7 @@ import platform
 import urllib2, urllib
 import subprocess
 import tempfile
+import csv
 from lxml.html import parse
 from lxml.cssselect import CSSSelector
 from django.conf import settings
@@ -167,18 +168,20 @@ def getData(command=None, re=None):
                 break
     return lines
 
-def getTimezoneForAirport(iataCode=None):
-    static_files = getattr(settings, 'STATICFILES_DIRS')
-    airportsDat = ""
-    for dir in static_files:
-        if os.path.isfile(dir + "/airports.dat"):
-            airportsDat = dir
-            break
 
-    for line in open(airportsDat):
-        split = line.split(",")
-        currentIata = split[4]
-        offset = split[9]
-        dst = split[10]
-        if currentIata == iataCode:
-            print "%s : %s : %s" % (currentIata, offset,dst)
+def getTimezones():
+    timezones = {}
+    airportsDat = os.path.join(os.path.curdir, "RouteFinder/schedule/airports.dat")
+    import csv
+    with open(airportsDat, 'rb') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            iataCode = row[4].decode('utf-8')
+            offset = row[9].decode('utf-8')
+            dst = row[10].decode('utf-8')
+            timezones[iataCode]={
+                'offset': offset,
+                'dst': dst
+            }
+
+    return timezones

@@ -1,0 +1,14 @@
+{% macro airportList(airport_list=[], link="") -%}
+    <div>
+        {% if airports is defined %}
+            <ul id="searchList" data-role="listview" data-theme="b" data-filter="true"
+                data-filter-placeholder="Search..." data-inset="true">
+                {% for airport in airports %}
+                    <li data-filtertext="{{ airport.iataCode }}"><a href="{{ link + airport.iataCode }}/">{{ airport.name }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            No Airports.
+        {% endif %}
+    </div>
+{% endmacro %}	

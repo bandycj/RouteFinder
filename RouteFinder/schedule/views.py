@@ -8,10 +8,11 @@ from lxml.cssselect import CSSSelector
 
 from RouteFinder.utils import render_to_response
 from RouteFinder.search.models import Airport, Flight
-from RouteFinder.schedule.processor import getSchedule, getTimezoneForAirport
+from RouteFinder.schedule.processor import getSchedule, getTimezones
 
 GEOCODE_URL = "http://www.mapquestapi.com/geocoding/v1/address?key=Fmjtd%7Cluua2gu2n0%2Caw%3Do5-hfzs1&mapData=nadb,1547&outFormat=xml&location="
 TIMEZONE_URL = "http://www.earthtools.org/timezone/%s/%s"
+AIRPORT_URL = "http://www.southwest.com/html/air/airport-information.html"
 
 CITY_ROWS = CSSSelector('td.city')
 STATION_ID_DIV = CSSSelector('div.stationID')
@@ -21,61 +22,42 @@ def index(request):
     return render_to_response('schedule/index.html')
 
 
-def airports(request):
-    """
-
-    """
-    url = "http://www.southwest.com/html/air/airport-information.html"
-    doc = parse(url).getroot()
-    static_files = getattr(settings, 'STATIC_URL')
-    airportsDat = urllib.urlopen("%s/airports.dat" % static_files)
+def update_airports(request):
+    doc = parse(AIRPORT_URL).getroot()
+#    timezones = getTimezones()
     for row in CITY_ROWS(doc):
-#        try:
         iataCode = STATION_ID_DIV(row)[0].text
         name = AIRPORT_NAME_DIV(row)[0].text
-        for line in airportsDat.read():
-            split = line.split(",")
-            currentIata = split[4]
-            offset = split[9]
-            dst = split[10]
-            if currentIata == iataCode:
-                print "%s : %s : %s" % (currentIata, offset,dst)
-#        cityName = name[:name.index(" - ")].replace(" ", "%20")
-#        url = GEOCODE_URL + cityName
-#        search = etree.fromstring(urllib.urlopen(url).read())
-#        lat = search.xpath("//lat")[0].text
-#        lng = search.xpath("//lng")[0].text
-#        print TIMEZONE_URL % (lat,lng)
-#        print "%s : %s" % (iataCode, name)
-#
-#        airport = Airport.objects.get_or_create(iataCode=iataCode, name=name)
-#        airport.save()
-#        except:
-#            continue
+#            tz_offset = timezones[iataCode]['offset']
+#            dst = timezones[iataCode]['offset']
 
+        airport = Airport.objects.get_or_create(iataCode=iataCode, name=name)
+        print airport
+    Airport.objects
 
-    return render_to_response('schedule/airports.html', {
+    return render_to_response('schedule/schedule_update_airports.html', {
         'airports': Airport.objects.all()
     })
 
 
-def scheduleCities(request):
+def airports(request):
     airport_list = Airport.objects.all().order_by('iataCode')
-    return render_to_response('schedule/schedule_form.html', {
+    return render_to_response('schedule/schedule_airports.html', {
         'airport_list': airport_list
     })
 
 
-def scheduleForm(request, iataCode=None):
+def form(request, iataCode=None):
     return render_to_response('schedule/schedule_form.html', {
         'iataCode': iataCode,
         })
 
 
-def updateSchedule(request, iataCode=None):
+def update(request, iataCode=None):
+    flights = []
     if request.method == 'POST':
-        data = getSchedule(iataCode)
-        for flight in data:
+        flights = getSchedule(iataCode)
+        for flight in flights:
             origin = Airport.objects.get(pk=flight['origin'])
             destination = Airport.objects.get(pk=flight['destination'])
             flightNum = flight['flightNum']
@@ -93,6 +75,12 @@ def updateSchedule(request, iataCode=None):
                 skd=skd,
                 ska=ska
             )
-    return render_to_response('schedule/update_result.html', {
-        'data': data
+    return render_to_response('schedule/schedule_update.html', {
+        'flights': flights
+    })
+
+def update_timezones(request):
+    timezones = updateTimezones()
+    return render_to_response('schedule/schedule_update_timezones.html', {
+        'timezones': timezones
     })

@@ -6,7 +6,7 @@ MAX_HOPS = 3
 def origins(request):
     airport_list = Airport.objects.all().order_by('iataCode')
 
-    return render_to_response('search/search.html', {
+    return render_to_response('search/search_origins.html', {
         'page_title': "Origin",
         'airport_list': airport_list,
         })
@@ -15,15 +15,15 @@ def origins(request):
 def destinations(request, origin=None):
     airport_list = Airport.objects.all().order_by('iataCode')
 
-    return render_to_response('search/search.html', {
+    return render_to_response('search/search_destinations.html', {
         'page_title': "Destination",
         'origin': origin,
         'airport_list': airport_list,
         })
 
 
-def final(request, origin=None, destination=None):
-    return render_to_response('search/search.html', {
+def form(request, origin=None, destination=None):
+    return render_to_response('search/search_form.html', {
         'page_title': "Search",
         'origin': origin,
         'destination': destination,
@@ -37,13 +37,6 @@ def result(request, origin=None, destination=None):
         d = Airport.objects.get(pk=destination)
         flights = Flight.objects.filter(origin=o, destination=d)
 
-        return render_to_response('search/result.html', {
+        return render_to_response('search/search_result.html', {
             'flights': flights
         })
-
-    return render_to_response('search/search.html', {
-        'page_title': "Search",
-        'origin': origin,
-        'destination': destination,
-        'max_hops': MAX_HOPS
-    })
